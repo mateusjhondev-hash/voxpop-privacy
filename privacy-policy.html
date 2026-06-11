@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - VoxPop</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d0d1a;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+        header {
+            background: #1a1a2e;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #BB86FC;
+        }
+        .logo { font-size: 48px; font-weight: 900; color: #BB86FC; letter-spacing: -1px; }
+        .logo span { color: #FF6B35; }
+        .subtitle { color: #888; margin-top: 8px; font-size: 16px; }
+        .badge {
+            display: inline-block;
+            background: #BB86FC22;
+            border: 1px solid #BB86FC;
+            color: #BB86FC;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+        main { max-width: 800px; margin: 0 auto; padding: 40px 20px 80px; }
+        .last-updated {
+            background: #1a1a2e;
+            border-left: 3px solid #BB86FC;
+            padding: 12px 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+        h2 {
+            color: #BB86FC;
+            font-size: 22px;
+            margin: 40px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #2a2a3e;
+        }
+        h2::before { content: "▸ "; color: #FF6B35; }
+        p { margin-bottom: 16px; color: #ccc; }
+        ul { margin: 12px 0 20px 24px; }
+        li { margin-bottom: 8px; color: #ccc; }
+        .highlight {
+            background: #1a1a2e;
+            border: 1px solid #2a2a3e;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+        .highlight strong { color: #BB86FC; }
+        .contact-box {
+            background: linear-gradient(135deg, #1a1a2e, #0d0d1a);
+            border: 1px solid #BB86FC;
+            border-radius: 16px;
+            padding: 28px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .contact-box h3 { color: #BB86FC; font-size: 20px; margin-bottom: 12px; }
+        .contact-box a { color: #FF6B35; text-decoration: none; font-weight: 600; }
+        footer {
+            background: #1a1a2e;
+            text-align: center;
+            padding: 24px;
+            color: #555;
+            font-size: 13px;
+            border-top: 1px solid #2a2a3e;
+        }
+        footer span { color: #BB86FC; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Vox<span>Pop</span></div>
+    <div class="subtitle">Política de Privacidad</div>
+    <div class="badge">by KVANT</div>
+</header>
+
+<main>
+    <div class="last-updated">
+        📅 Última actualización: 11 de junio de 2026 · Versión 1.0
+    </div>
+
+    <p>En <strong>KVANT</strong>, desarrolladores de <strong>VoxPop</strong>, nos comprometemos a proteger tu privacidad. Esta política explica qué información recopilamos, cómo la usamos y cómo la protegemos cuando usas nuestra aplicación.</p>
+
+    <h2>1. Información que recopilamos</h2>
+    <div class="highlight">
+        <strong>Datos de ubicación</strong>
+        <p>VoxPop utiliza tu ubicación GPS para mostrar mensajes de audio (Voxes) cercanos a tu posición y para geolocalizar los mensajes que grabas. La ubicación se usa únicamente en tiempo real y no se almacena de forma continua.</p>
+    </div>
+    <div class="highlight">
+        <strong>Grabaciones de audio</strong>
+        <p>Los mensajes de voz que grabas se almacenan en Firebase Storage de Google. Estos audios son públicos para usuarios cercanos a la ubicación donde fueron grabados y expiran automáticamente a las 4 horas.</p>
+    </div>
+    <div class="highlight">
+        <strong>Identificador anónimo</strong>
+        <p>Usamos Firebase Authentication para asignar un identificador único y anónimo a cada dispositivo. No recopilamos nombres, correos electrónicos ni contraseñas.</p>
+    </div>
+
+    <h2>2. Cómo usamos tu información</h2>
+    <ul>
+        <li>Mostrar Voxes cercanos a tu ubicación en el mapa</li>
+        <li>Permitirte grabar y publicar mensajes de audio geolocalizados</li>
+        <li>Registrar reacciones y contadores de reproducciones</li>
+        <li>Mejorar el rendimiento y la experiencia de la app</li>
+    </ul>
+
+    <h2>3. Compartir información con terceros</h2>
+    <p>No vendemos ni compartimos tu información personal con terceros con fines comerciales. Utilizamos los siguientes servicios de Google Firebase:</p>
+    <ul>
+        <li><strong>Firebase Authentication</strong> — Autenticación anónima</li>
+        <li><strong>Cloud Firestore</strong> — Almacenamiento de metadatos de Voxes</li>
+        <li><strong>Firebase Storage</strong> — Almacenamiento de archivos de audio</li>
+        <li><strong>Google Maps SDK</strong> — Visualización del mapa</li>
+    </ul>
+    <p>Estos servicios están sujetos a la <a href="https://policies.google.com/privacy" style="color:#BB86FC">Política de Privacidad de Google</a>.</p>
+
+    <h2>4. Permisos que solicitamos</h2>
+    <ul>
+        <li><strong>Ubicación (ACCESS_FINE_LOCATION)</strong> — Para mostrar y publicar Voxes cerca de ti</li>
+        <li><strong>Micrófono (RECORD_AUDIO)</strong> — Para grabar mensajes de voz</li>
+        <li><strong>Internet (INTERNET)</strong> — Para sincronizar datos con Firebase</li>
+    </ul>
+
+    <h2>5. Retención y eliminación de datos</h2>
+    <p>Los Voxes (mensajes de audio y metadatos) se eliminan automáticamente 4 horas después de su publicación. Los identificadores anónimos de dispositivo persisten hasta que desinstales la app.</p>
+    <p>Puedes solicitar la eliminación de tus datos en cualquier momento contactándonos.</p>
+
+    <h2>6. Seguridad</h2>
+    <p>Implementamos medidas de seguridad técnicas incluyendo reglas de acceso en Firebase que garantizan que solo usuarios autenticados puedan publicar contenido, y que cada usuario solo pueda modificar su propio contenido.</p>
+
+    <h2>7. Menores de edad</h2>
+    <p>VoxPop no está dirigida a menores de 13 años. No recopilamos conscientemente información de menores. Si eres padre o tutor y crees que tu hijo ha proporcionado información, contáctanos.</p>
+
+    <h2>8. Cambios a esta política</h2>
+    <p>Podemos actualizar esta política ocasionalmente. Te notificaremos de cambios significativos a través de la app. El uso continuado de VoxPop después de los cambios implica aceptación de la política actualizada.</p>
+
+    <div class="contact-box">
+        <h3>¿Tienes preguntas?</h3>
+        <p>Contáctanos en cualquier momento:</p>
+        <p><a href="mailto:mateusjhon.dev@gmail.com">mateusjhon.dev@gmail.com</a></p>
+        <p style="margin-top:8px; color:#555; font-size:13px;">KVANT · Bucaramanga, Colombia</p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 <span>KVANT</span> · Todos los derechos reservados · VoxPop</p>
+</footer>
+
+</body>
+</html>
